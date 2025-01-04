@@ -1,9 +1,13 @@
-import mongoose from "mongoose";
-import bcrypt from "bcrypt"
+import bcrypt from 'bcryptjs';
+
+import mongoose from 'mongoose';
+
+
+
 
 const userSchema = new mongoose.Schema({
   name: {
-    type: String,
+    type: String, 
     required: true
   },
   address: {

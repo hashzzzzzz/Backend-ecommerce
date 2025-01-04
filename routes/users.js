@@ -1,6 +1,6 @@
 import express from 'express'
 import { User as Users } from '../models/usersModel.js'
-import bcrypt from 'bcrypt'
+import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
 
 
