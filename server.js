@@ -17,7 +17,8 @@ import paymenti from './routes/payment.js';
 const app = express();
 
 // Database Connection
-mongoose.connect(process.env.DBCONN, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.DBCONN, { useNewUrlParser: true, useUnifiedTopology: true , socketTimeoutMS: 45000, // Increase timeout
+    serverSelectionTimeoutMS: 5000 });
 
 const db = mongoose.connection;
 
